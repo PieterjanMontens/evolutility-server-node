@@ -181,11 +181,13 @@ function SQLgetMany(m, req, isCSV, wCount){
 
     // ---- RECORD COUNT (added to selection)
     if(wCount){
-        if(sqlWs.length){
-            sqlSel += ',(SELECT count(*) FROM '+m.schemaTable+')::integer AS _full_count';
-        }else{
-            sqlSel += ',count(*) OVER()::integer AS _full_count';
-        }
+        sqlSel += ',(SELECT count(*) FROM '+m.schemaTable+')::integer AS _full_count';
+        // Disabled this, it's painfully slow, don't know what the length param changes here
+        // if(sqlWs.length){
+        //     sqlSel += ',(SELECT count(*) FROM '+m.schemaTable+')::integer AS _full_count';
+        // }else{
+        //     sqlSel += ',count(*) OVER()::integer AS _full_count';
+        // }
     }
     
     // ---- ORDERING
