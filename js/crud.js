@@ -15,7 +15,7 @@ const dico = require('./utils/dico'),
     config = require('../config.js');
 
 const schema = '"'+(config.schema || 'evolutility')+'"',
-    defaultPageSize = config.pageSize || 200,
+    defaultPageSize = config.pageSize || 300,
     lovSize = config.lovSize || 300;
 
 // - build the header row for CSV export
