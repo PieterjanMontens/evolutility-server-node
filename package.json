@@ -15,21 +15,21 @@
     "makedb": "node js/setup/database.js"
   },
   "dependencies": {
-    "chalk": "~2.4.2",
     "body-parser": "~1.18.3",
+    "chalk": "~2.4.2",
     "csv-express": "~1.2.2",
     "debug": "~4.1.1",
     "express": "~4.17.1",
     "express-graphql": "~0.8.0",
-    "graphql": "~14.4.2",
     "formidable": "~1.2.1",
+    "graphql": "~14.4.2",
     "helmet": "~3.18.0",
-    "pg": "^7.11.0",
+    "pg": "^7.17.1",
     "pg-connection-string": "~2.1.0",
     "pg-promise": "^8.7.3",
     "shortid": "~2.2.14",
     "supervisor": "~0.12.0",
-    "underscore": "~1.9.1"
+    "underscore": "^1.9.2"
   },
   "keywords": [
     "low-code",

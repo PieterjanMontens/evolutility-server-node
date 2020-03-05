@@ -14,7 +14,7 @@ const dico = require('./utils/dico'),
     config = require('../config.js');
 
 const schema = '"'+(config.schema || 'evolutility')+'"',
-    defaultPageSize = config.pageSize || 50;
+    defaultPageSize = config.pageSize || 200;
 
 // - returns data for a single charts
 // - sample url: http://localhost:2000/api/v1/todo/chart/category
