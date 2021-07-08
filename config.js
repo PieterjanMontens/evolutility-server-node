@@ -1,4 +1,4 @@
-
+// test ecrasement config
 module.exports = {
 
 	// Path to REST API
@@ -10,12 +10,12 @@ module.exports = {
 
 	// DB connection
 	connectionString: process.env.DATABASE_URL || 'postgres://evol:love@localhost:5432/Evolutility', 
-	schema: 'evolutility',
+	schema: 'public',
 
 	// OPTIONS
 	// Pagination and maximum number of rows
-	pageSize: 50,
-	lovSize: 100,
+	pageSize: 100,
+	lovSize: 200,
 	csvSize: 1000,
 	csvHeader: 'id', //label', // possible values: id, label
 
@@ -26,10 +26,8 @@ module.exports = {
 	// - Comments & Ratings (community feature) 
 	wComments: false,
 	wRating: false,
-
-    // - Columns containing created and last updated dates
-    createdDateColumn: 'c_date',
-    updatedDateColumn: 'u_date',
+    createdDateColumn: 'date_created',
+    updatedDateColumn: 'date_updated',
 
 	// - API discovery
 	apiInfo: true,
